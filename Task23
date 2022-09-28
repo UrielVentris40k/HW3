@@ -1,0 +1,17 @@
+void CubeMethod()
+{
+    Console.Write("Введите число: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+
+    double[] array = new double[number];
+    double[] CubeArray = new double [number];
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = i + 1;
+        CubeArray[i] = Math.Pow(array[i], 3);
+    }
+    Console.WriteLine("Кубы чисел содержащихся во введенном числе: " + string.Join(",", CubeArray) );
+}
+    
+
+CubeMethod();
